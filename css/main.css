@@ -1,0 +1,583 @@
+@charset "UTF-8";
+/*!
+Theme Name:
+Author: SokoTech / edgaar.net
+Author URI: https://soko.tech
+Text Domain:
+*/
+/* ----------------- Colors ---------------------------------------
+
+white: #f5f5f5
+blue: #2ea0ff
+darkblue: #007ee6
+gray: #303030
+dakgray: #1D1D1D
+
+------------------------------------------------------------------ */
+
+/* --------------------------------------- Fonts ----------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900|Roboto+Slab:400,700);
+
+/* --------------------------------------- General --------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+
+  /* this breaks position sticky in Firefox */
+  /* overflow-x: hidden; */
+}
+
+
+/* --------------------------------------- MAIN NAV --------------- */
+
+.fixed-top {
+    padding: 1%;
+    display: flex;
+}
+
+.menu-divider {
+  border-bottom: 1px solid #007ee6;
+  margin: 0 20%;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #2ea0ff !important;
+}
+
+.navbar-nav {
+  position: realtive;
+  right: 5%;
+  top: 25%;
+}
+
+.navbar-brand {
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  margin: 2% 5%;
+  text-align: center;
+}
+
+.nav-item-01 {
+  margin-top: 10%;
+}
+
+.nav-link {
+  padding: 5% 0;
+}
+
+/* .nav-item-01, .nav-item-02, .nav-item-03, .nav-item-04, {
+}
+*/
+
+.dropdown-menu {
+  background-color: #f5f5f5;
+  border: 2px solid #2ea0ff;
+}
+
+.dropdown-divider {
+ border-top: 2px solid #2ea0ff;
+}
+
+.dropdown-item:hover {
+  background-color: tranparent !important;
+}
+
+.declaration-download {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item-declaration-icon {
+  align-items: center;
+  display: flex;
+}
+
+.declaration-download {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+
+}
+
+.declaration-download-icon {
+  margin: auto;
+  width: 100px;
+}
+
+.nav-item-declaration-text {
+  text-align: center;
+  margin: 10% 0 7% 0;
+  font-weight: 100;
+}
+
+/*  (landscape phones, 576px and up)   */
+@media screen and (min-width: 576px) {
+
+          .navbar-brand {
+            font-size: 1em;
+          }
+}
+
+/*  (tablets, 768px and up)  */
+@media screen and (min-width: 768px) {
+
+
+
+        .nav-item {
+            margin: 1% 5%;
+            text-align: center;
+        }
+
+        .navbar-brand {
+          font-size: 1em;
+        }
+
+        .nav-item-01 {
+            margin-top: 5%;
+        }
+
+        .nav-item-declaration-icon {
+          margin: 3% 0 0 0;
+        }
+
+        .declaration-download {
+            width: 90px;
+            height: auto;
+        }
+
+        .nav-item-declaration-text {
+            margin: 0% 0 7% 0;
+        }
+
+}
+
+/*  (desktops, 992px and up)  */
+@media screen and (min-width: 992px) {
+
+          .fixed-top {
+            padding: 1%;
+          }
+
+          .navbar-nav {
+            width: 100%;
+          }
+
+          .menu-divider {
+            display: none;
+          }
+
+          .navbar-brand {
+            font-size: 1em;
+          }
+
+          .nav-item {
+              margin: 0.3% 5%;
+          }
+
+          .declaration-download {
+              width: 85%;
+              height: auto;
+          }
+
+          .declaration-download-icon {
+              width: 40px;
+          }
+
+          .nav-item-declaration-icon {
+              margin: 0;
+          }
+
+          .nav-item-declaration-text {
+              margin: 1% 0 0% 0;
+              font-weight: 100;
+          }
+}
+
+
+/*  (large desktops, 1200px and up)  */
+@media screen and (min-width: 1200px) {
+
+          .navbar-nav {
+            width: 100%;
+          }
+
+          .navbar-brand {
+            font-size: 1em;
+          }
+
+          .menu-divider {
+           display: none;
+          }
+
+}
+
+
+
+/* --------------------------------------- HEADER --------------- */
+
+header {
+  grid-column: 1 / 3;
+  color: white;
+  text-align: center;
+}
+
+.bg {
+  background-color: #23231;
+  display: flex;
+  height: 900px;
+  background-size: cover;
+}
+
+.bg-headline {
+  margin: 30% auto;
+  color: black;
+}
+
+.bg-headline h1{
+  font-size: 2em;
+  color: #2ea0ff;
+}
+
+.bg-headline p{
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.subtitle {
+  font-family: 'Roboto Slab', serif;
+}
+
+/*  (landscape phones, 576px and up)   */
+@media screen and (min-width: 576px) {  }
+
+/*  (tablets, 768px and up)  */
+@media screen and (min-width: 768px) {
+
+          header {
+            height: 900px;
+            padding: 4rem;
+          }
+
+          .bg-headline h1{
+            font-size: 4.5em;
+            color: #2ea0ff;
+          }
+
+          .bg-headline p{
+            font-size: 1.2em;
+            font-weight: 100;
+          }
+
+}
+
+/*  (desktops, 992px and up)  */
+@media screen and (min-width: 992px) {
+
+          header {
+            height: 900px;
+            padding: 4rem;
+          }
+
+          .bg-headline h1{
+            font-size: 4.5em;
+            color: #2ea0ff;
+          }
+
+          .bg-headline p{
+            font-size: 1.2em;
+            font-weight: 100;
+          }
+}
+
+
+/*  (large desktops, 1200px and up)  */
+@media screen and (min-width: 1200px) {
+
+          header {
+            height: 900px;
+            padding: 4rem;
+          }
+
+          .bg-headline h1{
+            font-size: 4.5em;
+            color: #2ea0ff;
+          }
+
+          .bg-headline p{
+            font-size: 1.2em;
+            font-weight: 100;
+          }
+
+}
+
+
+
+/* --------------------------------------- SIDEBAR NAV --------------- */
+
+nav {
+  background: #303030;
+  width: 300px;
+  top: 15%
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-block {
+  width: 240px;
+}
+
+.sidebar-nav {
+  background-color: #303030;
+   display: none;
+}
+
+.section-block-anchor-link:hover {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  nav ul {
+    position: sticky;
+    top: 15%;
+  }
+}
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a.current {
+  background: black;
+}
+
+.section-nav-title {
+  font-size: 0.7em;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.section-nav-title-introduction{
+  font-size: 1em
+}
+
+.section-nav-number {
+  font-weight: 600;
+  font-size: 2em;
+  margin-right: 3%;
+  color: #2ea0ff;
+}
+
+
+
+/*  (landscape phones, 576px and up)   */
+@media screen and (min-width: 576px) {  }
+
+/*  (tablets, 768px and up)  */
+@media screen and (min-width: 768px) {
+
+        .sidebar-nav {
+           display: none;
+        }
+
+        .section-nav-title-introduction {
+        margin: 30% 0 0 0;
+        }
+
+}
+
+/*  (desktops, 992px and up)  */
+@media screen and (min-width: 992px) {
+
+        .sidebar-nav {
+           display: block;
+        }
+
+        .section-nav-title-introduction {
+        margin: 30% 0 0 0;
+        }
+
+}
+
+/*  (large desktops, 1200px and up)  */
+@media screen and (min-width: 1200px) {
+
+        .sidebar-nav {
+           display: block;
+        }
+
+        .section-nav-title-introduction {
+        margin: 30% 0 0 0;
+        }
+
+}
+
+
+/* --------------------------------------- PAGE CONTENT --------------- */
+
+.main {
+  padding: 0;
+  grid-column: 1 / 3;
+}
+
+.main .container {
+  padding: 0 10%;
+}
+
+.sidebar {
+  display: none;
+}
+
+.section-intro-temp {
+    height: 0;
+}
+
+.section-illustration {
+  margin: 15% 0 10% 0;
+}
+
+#introduction-section h1, #section-1 h1, #section-2 h1, #section-3 h1, #section-4 h1, #section-5 h1, #section-6 h1, #section-7 h1, #section-8 h1, #section-9 h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  color: #2ea0ff;
+}
+
+#introduction-section h2, #section-1 h2, #section-2 h2, #section-3 h2, #section-4 h2, #section-5 h2, #section-6 h2, #section-7 h2, #section-8 h2, #section-9 h2 {
+  font-weight: 700;
+}
+
+#introduction-section h5, #section-1 h5, #section-2 h5, #section-3 h5, #section-4 h5, #section-5 h5, #section-6 h5, #section-7 h5, #section-8 h5, #section-9 h5 {
+  margin-top: 2%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+#section-1 p, #section-2 p, #section-3 p, #section-4 p, #section-5 p, #section-6 p, #section-7 p, #section-8 p, #section-9 p {
+  margin-top: 2%;
+  line-height: 1.9em;
+  font-size: 1em;
+}
+
+.download-section {
+  text-align: center;
+  margin: 10% 0;
+}
+
+.download-section h5 {
+  margin-top: 5%;
+}
+
+.download-file-button {
+  margin: 3% auto;
+  background-color: #2ea0ff;
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+}
+
+.download-file-button a {
+  width:75px;
+  margin: auto;
+}
+
+/*  (tablets, 768px and up)  */
+@media screen and (min-width: 768px) {
+.sidebar {
+  display: none;
+}
+
+}
+
+
+/*  (desktops, 992px and up)  */
+@media screen and (min-width: 992px) {
+
+.section-intro-temp {
+    height: 150px;
+}
+
+}
+
+/*  (large desktops, 1200px and up)  */
+@media screen and (min-width: 1200px) {
+
+            .sidebar {
+              display: block;
+            }
+
+            .main {
+              padding: 0;
+            }
+
+            .section-intro-temp {
+                height: 150px;
+            }
+
+            .grid-container {
+              display: grid;
+              grid-template-columns: auto auto auto auto;
+              grid-gap: 10px;
+            }
+
+            #content-section-container {
+              width: 100%
+            }
+
+            .page-main-content {
+              margin: 15% 0 10% 0;
+            }
+
+            .page-main-content h1{
+            font-size: 3em;
+            font-weight: 700;
+            color: #2ea0ff;
+            }
+
+            .page-main-content h4{
+              margin-top: 1%;
+              font-family: 'Roboto Slab', serif;
+              font-weight: 400;
+              font-size: 1.5em;
+              line-height: 1.7em;
+            }
+
+            .page-main-content p{
+              margin-top: 1%;
+              font-size: 1em;
+              line-height: 1.7em;
+            }
+
+}
+
+/* --------------------------------------- MAIN FOOTER --------------- */
+
+footer {
+  grid-column: 1 / 3;
+  background: #1D1D1D;
+  padding: 5rem 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
