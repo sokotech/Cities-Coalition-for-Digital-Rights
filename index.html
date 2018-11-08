@@ -16,8 +16,6 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
 
 
-
-
     <title>Cities for Digital Rights</title>
   </head>
   <body>
@@ -32,7 +30,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav text-right">
+      <ul class="navbar-nav text-right justify-content-end">
         <li class="nav-item nav-item-01">
           <a class="nav-link" href="about.html">About</a>
         </li>
@@ -41,8 +39,6 @@
         <li class="nav-item nav-item-02">
           <a class="nav-link" href="#">Page 02</a>
         </li>
-
-      <div class="menu-divider"></div>
 
       <!--  <li class="nav-item nav-item-03">
           <a class="nav-link" href="#">Page 03</a>
@@ -58,14 +54,14 @@
 
         <li class="nav-item-declaration-icon">
           <a class="nav-link declaration-download" href="#" target="_blank">
-            <img class="declaration-download-icon" src="img/download-icon-black.svg">
+            <img class="declaration-download-icon" src="img/download-icon-white.svg">
           </a>
         </li>
-
-        <li class="nav-item-declaration-text">
-          Download the declaration
-        </li>
-
+        <a class="nav-item-declaration-text" href="#" target="_blank">
+          <li >
+            Download the declaration
+          </li>
+        </a>
 
       </ul>
 
@@ -86,6 +82,27 @@
     </div><!-- container -->
   </div><!-- bg -->
 
+  <div class="bg-buttons">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-12" id="bg-button-01">
+          <a href="#footer-section"><button class="bg-button-element" type="button" name="button">Endorsing Cities</button></a>
+        </div><!-- col -->
+
+        <div class="col-md-4 col-sm-12" id="bg-button-02">
+          <a href="#declaration"><button class="bg-button-element" type="button" name="button">Declaration</button></a>
+        </div><!-- col -->
+
+
+        <div class="col-md-4 col-sm-12" id="bg-button-03">
+        <a href="#"><button class="bg-button-element" type="button" name="button">How to Endorse</button></a>
+        </div><!-- col -->
+
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- bg-buttons -->
+
 </header>
 
 <div class="main">
@@ -96,9 +113,9 @@
       <div class="container">
 
           <li class="section-block">
-            <a class="section-block-anchor-link" href="#introduction">
+            <a class="section-block-anchor-link" href="#declaration">
               <div class="container-sidebar-nav-item">
-                <p class="section-nav-title-introduction">Introduction</p>
+                <p class="section-nav-title-introduction">Declaration</p>
               </div>
 
             </a>
@@ -108,7 +125,7 @@
             <div class="row">
               <a class="section-block-anchor-link" href="#section-1">
                 <div class="col-md-3">
-                  <h6 class="section-nav-number">01</h6>
+                  <h6 class="section-nav-number">01.</h6>
                 </div>
 
                 <div class="col-md-12">
@@ -122,7 +139,7 @@
                   <div class="row">
                     <a class="section-block-anchor-link" href="#section-2">
                       <div class="col-md-3">
-                        <h6 class="section-nav-number">02</h6>
+                        <h6 class="section-nav-number">02.</h6>
                       </div>
 
                       <div class="col-md-12">
@@ -137,7 +154,7 @@
                   <div class="row">
                     <a class="section-block-anchor-link" href="#section-3">
                       <div class="col-md-3">
-                        <h6 class="section-nav-number">03</h6>
+                        <h6 class="section-nav-number">03.</h6>
                       </div>
 
                       <div class="col-md-12">
@@ -153,7 +170,7 @@
                   <div class="row">
                     <a class="section-block-anchor-link" href="#section-4">
                       <div class="col-md-3">
-                        <h6 class="section-nav-number">04</h6>
+                        <h6 class="section-nav-number">04.</h6>
                       </div>
 
                       <div class="col-md-12">
@@ -169,11 +186,22 @@
                   <div class="row">
                     <a class="section-block-anchor-link" href="#section-5">
                       <div class="col-md-3">
-                        <h6 class="section-nav-number">05</h6>
+                        <h6 class="section-nav-number">05.</h6>
                       </div>
 
                       <div class="col-md-12">
                         <p class="section-nav-title">Open and ethical digital service standards</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="section-block" id="button-sidebar-go-to-top">
+                  <div class="row">
+                    <a class="section-block-anchor-link" href="#">
+                      <div class="col-md-12">
+                        <img id="sidebar-go-to-top" src="img/arrow-go-to-top.svg" alt="">
+                        <p class="section-nav-title">Go to top</p>
                       </div>
                     </a>
                   </div>
@@ -186,7 +214,7 @@
 
 
   <div class="container">
-        <div class="section-intro-temp" id="introduction"></div>
+        <div class="section-intro-temp" id="declaration"></div>
         <section id="introduction-section">
           <h2>Declaration of Cities Coalition for Digital Rights</h2>
           <p>We, the undersigned cities, formally commit to a new joint initiative to protect and uphold the digital rights of our constituents. We have come together to form the Cities Coalition for Digital Rights, to advance digital rights at the local and global level.</p>
@@ -206,8 +234,8 @@
           <div class="section-illustration">
              <img src="img/example-graphic.svg" alt="">
           </div>
-          <h1>01</h1>
-          <h2>Universal and equal access to the internet, and digital literacy;</h2>
+
+          <h2><span class="section-number">01</span> Universal and equal access to the internet, and digital literacy;</h2>
 
           <p>Everyone should have universal access to affordable and accessible internet and digital services on equal terms and the digital skills to enjoy that access and overcome the digital divide.</p>
 
@@ -217,8 +245,8 @@
           <div class="section-illustration">
             <img src="img/example-graphic.svg" alt="">
           </div>
-          <h1>02</h1>
-          <h2>Privacy and security;</h2>
+
+          <h2><span class="section-number">02</span> Privacy and security;</h2>
           <p>Everyone has the right to privacy and control over their personal information in both physical and virtual places, to ensure respect for their dignity, identity and privacy. Our residents should have control over their data, and choice about what happens to their digital identity, who uses their data and for which purposes, and to keep those data secure; and to communicate electronically anonymously in order to exercise civil and political freedoms.</p>
 
         </section>
@@ -227,8 +255,8 @@
           <div class="section-illustration">
             <img src="img/example-graphic.svg" alt="">
           </div>
-          <h1>03</h1>
-          <h2>Transparency, accountability, and non-discrimination of data, content and algorithms;</h2>
+
+          <h2><span class="section-number">03</span> Transparency, accountability, and non-discrimination of data, content and algorithms;</h2>
 
           <p>Everyone should have access to understandable and accurate information about the technological and algorithmic systems that impact their lives, and the ability to question and change these systems when they are unfair, biased or have discriminatory impact.</p>
 
@@ -238,8 +266,8 @@
           <div class="section-illustration">
             <img src="img/example-graphic.svg" alt="">
           </div>
-          <h1>04</h1>
-          <h2>Participatory Democracy, diversity and inclusion;</h2>
+
+          <h2><span class="section-number">04</span> Participatory Democracy, diversity and inclusion;</h2>
 
           <p>Everyone should be represented on the internet, and collectively engage with the city through open, participatory and transparent opportunities to shape the technologies designed for them, including managing our digital infrastructures and data as a common good.</p>
 
@@ -249,8 +277,8 @@
           <div class="section-illustration">
             <img src="img/example-graphic.svg" alt="">
           </div>
-          <h1>05</h1>
-          <h2>Open and ethical digital service standards</h2>
+
+          <h2><span class="section-number">05</span> Open and ethical digital service standards</h2>
 
           <p>Everyone should be able to use the technologies of their choice, and expect the same level of interoperability, inclusion and opportunity in our digital services. Cities should define their own technological infrastructures, services and agenda, through open and ethical digital service standards and data to ensure that they live up to this promise.</p>
 
@@ -265,28 +293,24 @@
         </div>
 
 
-        <div class="social-share">
-
-          <div class="container">
-
-            <h4 id="social-share-title">Share the declaration</h4>
-          	<div class="row justify-center">
-          		<div class="col-6" id="social-share-col6">
-                <div class="social">
-                  <ul>
-                      <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-lg fa-whatsapp"></i></a></li>
-                      <li><a href="#"><i class="fa fa-lg fa-envelope-o"></i></a></li>
-                      <li><a href="#"><i class="fa fa-lg fa-rss"></i></a></li>
-                  </ul>
-                </div>
-
-                </div>
-          	</div>
-          </div>
-
-        </div>
+        <div  class="social-share">
+            <div class="container">
+              <h4 id="social-share-title">Share the declaration</h4>
+              	<div class="row justify-center">
+              		<div class="col-6" id="social-share-col6">
+                    <div class="social">
+                      <ul>
+                          <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-lg fa-whatsapp"></i></a></li>
+                          <li><a href="#"><i class="fa fa-lg fa-envelope-o"></i></a></li>
+                          <li><a href="#"><i class="fa fa-lg fa-rss"></i></a></li>
+                      </ul><!-- ul -->
+                    </div><!-- social -->
+                  </div><!-- col-6 -->
+            	</div><!-- row justify-center -->
+            </div><!-- container -->
+        </div><!-- social-share -->
 
 
 
@@ -298,7 +322,7 @@
 
 
 
-<footer>
+<footer id="footer-section">
 
   <div class="container">
 

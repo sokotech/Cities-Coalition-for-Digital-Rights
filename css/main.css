@@ -1,9 +1,7 @@
 @charset "UTF-8";
 /*!
-Theme Name:
 Author: SokoTech / edgaar.net
 Author URI: https://soko.tech
-Text Domain:
 */
 /* ----------------- Colors ---------------------------------------
 
@@ -15,12 +13,9 @@ dakgray: #1D1D1D
 
 ------------------------------------------------------------------ */
 
-
-
-
 /* --------------------------------------- FONTS ----------------- */
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900|Roboto+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:400,500,700,900);
 
 /* --------------------------------------- GENERAL --------------- */
 
@@ -32,7 +27,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: min-content 1fr;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #f5f5f5;
 
   /* this breaks position sticky in Firefox */
@@ -70,11 +65,24 @@ p {
 .navbar-brand {
   font-size: 0.7em;
   text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  color: white !important;
+}
+
+.navbar-brand:hover {
+  transition: .2s ease;
+  color: #206aa8 !important;
 }
 
 .nav-item {
   margin: 2% 5%;
   text-align: center;
+  font-weight: 100;
+
+}
+
+#nav-link-active {
+  color: #206aa8 !important;
 }
 
 .nav-item-01 {
@@ -83,6 +91,35 @@ p {
 
 .nav-link {
   padding: 5% 0;
+  color: white !important;
+}
+
+.nav-link:hover {
+  transition: .2s ease;
+  color: #206aa8 !important;
+}
+
+.declaration-download {
+  transition: all .2s ease;
+}
+
+.declaration-download:hover {
+  transform: scale(1.1);
+}
+
+.nav-item a:hover {
+  transition: all 0.4s ease;
+  color: #206aa8 !important;
+}
+
+.nav-item-declaration-text {
+  color: white;
+}
+
+.nav-item-declaration-text:hover {
+  transition: all 0.4s ease;
+  color: #206aa8 !important;
+  text-decoration: none;
 }
 
 /* .nav-item-01, .nav-item-02, .nav-item-03, .nav-item-04, {
@@ -176,7 +213,7 @@ p {
 @media screen and (min-width: 992px) {
 
           .fixed-top {
-            padding: 1%;
+            padding: 1% 5%;
           }
 
           .navbar-nav {
@@ -192,7 +229,7 @@ p {
           }
 
           .nav-item {
-              margin: 0.3% 5%;
+              margin: 0.6% 5%;
           }
 
           .declaration-download {
@@ -246,12 +283,12 @@ header {
 .bg {
   background-color: #23231;
   display: flex;
-  height: 900px;
+  height: 300px;
   background-size: cover;
 }
 
 .bg-headline {
-  margin: 70% auto 0 auto;
+  margin: 40% auto 0 auto;
   color: black;
 }
 
@@ -261,11 +298,12 @@ header {
   text-transform: uppercase;
   margin: 0;
   font-weight: 900;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bg-headline h4{
   font-size: 2rem;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   margin: 0;
@@ -277,7 +315,39 @@ header {
 }
 
 .subtitle {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.bg-buttons .container {
+  width: 80%;
+}
+
+.bg-button-element{
+  transition: all 0.4s ease;
+  background-color: transparent;
+  border: 4px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 3% 10%;
+  font-size: 1em;
+  font-weight: 100;
+  color: #2ea0ff;
+  cursor: pointer;
+}
+
+.bg-button-element:hover {
+  background-color: #2ea0ff;
+  border: 4px solid #2ea0ff;
+  color: white;
+}
+
+#bg-button-01, #bg-button-02, #bg-button-03 {
+  margin: 3% 0;
+}
+
+#bg-button-02 .bg-button-element {
+  padding-left: 18%;
+  padding-right: 18%;
 }
 
 /*  (landscape phones, 576px and up)   */
@@ -285,6 +355,10 @@ header {
           header {
             height: 900px;
             padding: 4rem;
+          }
+
+          .bg {
+            height: 300px;
           }
 
           .bg-headline {
@@ -301,6 +375,15 @@ header {
             font-size: 1.2em;
             font-weight: 100;
           }
+
+          #bg-button-01, #bg-button-02, #bg-button-03 {
+            margin: 3% 0;
+          }
+
+          #bg-button-02 .bg-button-element {
+            padding-left: 15%;
+            padding-right: 15%;
+          }
 }
 
 /*  (tablets, 768px and up)  */
@@ -311,8 +394,12 @@ header {
             padding: 4rem;
           }
 
+          .bg {
+            height: 300px;
+          }
+
           .bg-headline {
-            margin: 20% auto;
+            margin: 10% auto;
             color: black;
           }
 
@@ -326,6 +413,14 @@ header {
             font-weight: 100;
           }
 
+          .bg-buttons .container {
+              width: 100%;
+          }
+
+          .bg-button-element{
+            font-size: 1.1em;
+          }
+
 }
 
 /*  (desktops, 992px and up)  */
@@ -336,8 +431,12 @@ header {
             padding: 4rem;
           }
 
+          .bg {
+            height: 350px;
+          }
+
           .bg-headline {
-            margin: 20% auto;
+            margin: 10% auto;
             color: black;
           }
 
@@ -350,6 +449,10 @@ header {
           .bg-headline p{
             font-size: 1.2em;
             font-weight: 100;
+          }
+
+          .bg-button-element{
+            font-size: 1.1em;
           }
 }
 
@@ -362,8 +465,12 @@ header {
             padding: 4rem;
           }
 
+          .bg {
+            height: 370px;
+          }
+
           .bg-headline {
-            margin: 25% auto;
+            margin: 10% auto;
             color: black;
           }
 
@@ -375,6 +482,10 @@ header {
           .bg-headline p{
             font-size: 1.2em;
             font-weight: 100;
+          }
+
+          .bg-button-element{
+            font-size: 1.1em;
           }
 
 }
@@ -408,6 +519,17 @@ nav ul {
   text-decoration: none;
 }
 
+#button-sidebar-go-to-top {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#sidebar-go-to-top {
+  width: 50%;
+  margin-bottom: 15%;
+}
+
+
 /* Only stick if you can fit */
 @media (min-height: 300px) {
   nav ul {
@@ -426,7 +548,7 @@ nav ul li a.current {
 }
 
 .section-nav-title {
-  font-size: 0.7em;
+  font-size: 0.85em;
   margin: 0;
   line-height: 1.3;
 }
@@ -498,6 +620,18 @@ nav ul li a.current {
   padding: 0 10%;
 }
 
+.page-main-content .container-fluid {
+  padding: 0;
+}
+
+.page-main-content h1 {
+
+    font-size: 2em;
+    font-weight: 700;
+    color: #2ea0ff;
+
+}
+
 .sidebar {
   display: none;
 }
@@ -510,6 +644,12 @@ nav ul li a.current {
   margin: 15% 0 10% 0;
 }
 
+.section-number {
+  color: #2ea0ff;
+  font-size: 1.4em;
+  margin-right: 1%;
+}
+
 #introduction-section h1, #section-1 h1, #section-2 h1, #section-3 h1, #section-4 h1, #section-5 h1, #section-6 h1, #section-7 h1, #section-8 h1, #section-9 h1 {
   font-size: 4.5em;
   font-weight: 700;
@@ -517,16 +657,20 @@ nav ul li a.current {
 }
 
 #introduction-section h2, #section-1 h2, #section-2 h2, #section-3 h2, #section-4 h2, #section-5 h2, #section-6 h2, #section-7 h2, #section-8 h2, #section-9 h2 {
-  font-weight: 700;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
 }
 
 #introduction-section h2 {
   margin-bottom: 3%;
+  font-size: 3em;
+  font-weight: 900;
 }
 
 #introduction-section h5, #section-1 h5, #section-2 h5, #section-3 h5, #section-4 h5, #section-5 h5, #section-6 h5, #section-7 h5, #section-8 h5, #section-9 h5 {
   margin-top: 2%;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.1em;
   line-height: 1.7em;
@@ -561,11 +705,19 @@ nav ul li a.current {
   margin: auto;
 }
 
+.page-content-text {
+  margin: 9% 10%;
+}
+
 /*  (landscape phones, 576px and up)   */
 @media screen and (min-width: 576px) {
 
           .main .container {
               padding: 0 0%;
+          }
+
+          .page-content-text {
+            margin: 9% 10%;
           }
 
 }
@@ -581,6 +733,10 @@ nav ul li a.current {
             display: none;
           }
 
+          .page-content-text {
+            margin: 9% 10%;
+          }
+
 }
 
 
@@ -593,6 +749,14 @@ nav ul li a.current {
 
           .section-intro-temp {
               height: 150px;
+          }
+
+          .page-content-text {
+            margin: 7% 10%;
+          }
+
+          .page-content-text {
+            margin: 9% 10%;
           }
 
 }
@@ -627,7 +791,11 @@ nav ul li a.current {
             }
 
             .page-main-content {
-              margin: 15% 0 10% 0;
+              margin: 0;
+            }
+
+            .page-main-content .container-fluid {
+              padding: 0;
             }
 
             .page-main-content h1{
@@ -638,7 +806,7 @@ nav ul li a.current {
 
             .page-main-content h4{
               margin-top: 1%;
-              font-family: 'Roboto Slab', serif;
+              font-family: 'Roboto', sans-serif;
               font-weight: 400;
               font-size: 1.5em;
               line-height: 1.7em;
@@ -648,6 +816,10 @@ nav ul li a.current {
               margin-top: 1%;
               font-size: 1em;
               line-height: 1.7em;
+            }
+
+            .page-content-text {
+              margin: 9% 10%;
             }
 
 }
@@ -897,7 +1069,7 @@ footer .container {
 }
 .social-share .container h4 {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   color: #2ea0ff;
@@ -927,21 +1099,21 @@ footer .container {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
+    transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
 }
 
 .social i:hover {
     color: #FFF;
     text-decoration: none;
-    transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
+    transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
 }
 
 .social .fa-facebook:hover {
