@@ -735,6 +735,13 @@ nav ul li a.current {
   margin: 9% 10%;
 }
 
+.photo-credits {
+  font-size: 0.7em !important;
+  justify-content: end;
+  display: flex;
+  margin-right: 3%;
+}
+
 /*  (landscape phones, 576px and up)   */
 @media screen and (min-width: 576px) {
 
@@ -828,6 +835,7 @@ nav ul li a.current {
             font-size: 3em;
             font-weight: 700;
             color: #2ea0ff;
+            margin-bottom: 3%;
             }
 
             .page-main-content h4{
@@ -847,6 +855,8 @@ nav ul li a.current {
             .page-content-text {
               margin: 9% 10%;
             }
+
+
 
 }
 
