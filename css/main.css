@@ -39,6 +39,10 @@ p {
   font-weight: 200;
 }
 
+a {
+    color: #2ea0ff;
+}
+
 /* --------------------------------------- MAIN NAV --------------- */
 
 .fixed-top {
@@ -168,6 +172,10 @@ p {
   font-weight: 100;
 }
 
+#declaration {
+  margin: 15% 0 0 0;
+}
+
 /*  (landscape phones, 576px and up)   */
 @media screen and (min-width: 576px) {
 
@@ -278,6 +286,11 @@ header {
   color: white;
   text-align: center;
   height: 700px;
+  background-image: url("../img/00-landing.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .bg {
@@ -355,8 +368,9 @@ header {
 /*  (landscape phones, 576px and up)   */
 @media screen and (min-width: 576px) {
           header {
-            height: 900px;
+            height: 700px;
             padding: 4rem;
+            background-size: 165%;
           }
 
           .bg {
@@ -389,8 +403,9 @@ header {
 @media screen and (min-width: 768px) {
 
           header {
-            height: 900px;
+            height: 800px;
             padding: 4rem;
+            background-size: 135%;
           }
 
           .bg {
@@ -435,8 +450,9 @@ header {
 @media screen and (min-width: 992px) {
 
           header {
-            height: 650px;
+            height: 900px;
             padding: 4rem;
+            background-size: 110%;
           }
 
           .bg {
@@ -480,6 +496,10 @@ header {
           header {
             height: 900px;
             padding: 4rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
           }
 
           .bg {
@@ -634,6 +654,11 @@ nav ul li a.current {
 
 }
 
+/* --------------------------------------- Pre main --------------- */
+
+.pre-main {
+  height: 100px;
+}
 
 /* --------------------------------------- PAGE CONTENT --------------- */
 
@@ -715,6 +740,7 @@ nav ul li a.current {
 
 .download-section h5 {
   margin-top: 5%;
+  font-weight: 100;
 }
 
 .download-file-button {
@@ -731,6 +757,11 @@ nav ul li a.current {
   margin: auto;
 }
 
+.download-file-button a:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+}
+
 .page-content-text {
   margin: 9% 10%;
 }
@@ -742,6 +773,48 @@ nav ul li a.current {
   margin-right: 3%;
 }
 
+#bg-button-read-more {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-button-element-read-more {
+  margin: 20% 0 5% 0;
+  transition: all 0.4s ease;
+  background-color: transparent;
+  border: 4px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 2% 0%;
+  font-size: 1em;
+  font-weight: 100;
+  color: #2ea0ff;
+  cursor: pointer;
+  width: 400px;
+}
+
+.bg-button-element-read-more:hover {
+  background-color: #2ea0ff;
+  border: 4px solid #2ea0ff;
+  color: white;
+}
+
+.endorse-section {
+  margin: 10% 0 3% 0;
+  text-align: center;
+}
+
+
+.endorse-section h2{
+  font-size: 2rem;
+  font-weight: 900;
+  color: #2ea0ff;
+  text-transform: uppercase;
+  font-family: 'roboto';
+  margin-bottom: 5%;
+}
+
+
+
 /*  (landscape phones, 576px and up)   */
 @media screen and (min-width: 576px) {
 
@@ -751,6 +824,10 @@ nav ul li a.current {
 
           .page-content-text {
             margin: 9% 10%;
+          }
+
+          #declaration {
+            margin: 10% 0 0 0;
           }
 
 }
@@ -780,8 +857,12 @@ nav ul li a.current {
               padding: 0 10%;
           }
 
+          #declaration {
+            margin: 10% 0 0 0;
+          }
+
           .section-intro-temp {
-              height: 150px;
+              height: 0;
           }
 
           .page-content-text {
@@ -856,8 +937,6 @@ nav ul li a.current {
               margin: 9% 10%;
             }
 
-
-
 }
 
 /* --------------------------------------- MAIN FOOTER --------------- */
@@ -871,9 +950,6 @@ footer {
   width: 100%;
 }
 
-footer .container {
-
-}
 
 .footer-container-titles {
 
@@ -1092,7 +1168,7 @@ footer .container {
 /* --------------------------------------- SOCIAL SHARE --------------- */
 
 .social-share {
-  margin: 20% 0 10% 0;
+  margin: 10% 0 10% 0;
 }
 
 .social {
@@ -1103,7 +1179,7 @@ footer .container {
 #social-share-col6 {
   margin: auto;
 }
-.social-share .container h4 {
+.social-share .container h5 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
