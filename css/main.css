@@ -711,6 +711,10 @@ nav ul li a.current {
   margin-right: 1%;
 }
 
+.section-anchor {
+  padding: 4% 0;
+}
+
 #introduction-section, #section-1, #section-2, #section-3, #section-4, #section-5, #section-6, #section-7, #section-8, #section-9 {
   margin-bottom: 30%
 }
@@ -725,6 +729,7 @@ nav ul li a.current {
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
   font-size: 1.7em;
+  margin-bottom: 10%;
 }
 
 #introduction-section h2 {
@@ -747,7 +752,7 @@ nav ul li a.current {
 
 #section-1 p, #section-2 p, #section-3 p, #section-4 p, #section-5 p, #section-6 p, #section-7 p, #section-8 p, #section-9 p {
   margin-top: 2%;
-  line-height: 1.9em;
+  line-height: 1.6em;
   font-size: 1em;
 }
 
@@ -845,6 +850,10 @@ nav ul li a.current {
   text-align: center;
 }
 
+#endorse {
+  padding-bottom: 10%;
+}
+
 
 .endorse-section h2{
   font-size: 1.7rem;
@@ -918,7 +927,9 @@ nav ul li a.current {
             font-weight: 900;
             font-family: 'Roboto', sans-serif;
             font-size: 2.5em;
+            margin-bottom: 5%;
           }
+
 
           .section-number {
             color: #2ea0ff;
@@ -1049,7 +1060,7 @@ nav ul li a.current {
             }
 
             #introduction-section h2 {
-              font-size: 3em;
+              font-size: 2.5em;
             }
 
             .bg-button-element-read-more {
