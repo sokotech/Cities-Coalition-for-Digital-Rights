@@ -63,8 +63,6 @@ a {
 
 .navbar-nav {
   position: realtive;
-  right: 5%;
-  top: 25%;
 }
 
 .navbar-light .navbar-toggler {
@@ -85,10 +83,9 @@ a {
 }
 
 .nav-item {
-  margin: 2% 5%;
+  margin: 2% 3%;
   text-align: center;
   font-weight: 100;
-
 }
 
 #nav-link-active {
@@ -155,8 +152,9 @@ a {
 }
 
 .nav-item-declaration-icon {
-  align-items: center;
-  display: flex;
+    align-items: center;
+    display: flex;
+    margin-top: 7%;
 }
 
 .declaration-download {
@@ -174,7 +172,7 @@ a {
 
 .nav-item-declaration-text {
   text-align: center;
-  margin: 10% 0 7% 0;
+  margin: 15% 0 15% 0;
   font-weight: 100;
 }
 
@@ -189,7 +187,7 @@ a {
 
 
         .nav-item {
-            margin: 1% 5%;
+            margin: 1% 4%;
             text-align: center;
         }
 
@@ -241,7 +239,7 @@ a {
           }
 
           .nav-item {
-              margin: 0.6% 5%;
+              margin: 0.6% 4%;
           }
 
           .declaration-download {
@@ -300,12 +298,12 @@ header {
 .bg {
   background-color: #23231;
   display: flex;
-  height: 330px;
+  height: 300px;
   background-size: cover;
 }
 
 .bg-headline {
-  margin: 50% auto 0 auto;
+  margin: 40% auto 0 auto;
   color: black;
 }
 
@@ -344,17 +342,17 @@ header {
   transition: all 0.4s ease;
   background-color: transparent;
   border: 4px solid #e0e0e0;
-  border-radius: 20px;
+  border-radius: 40px;
   padding: 1% 15%;
-  font-size: 1em;
-  font-weight: 100;
+  font-size: 0.9em;
+  font-weight: 400;
   color: #2ea0ff;
   cursor: pointer;
 }
 
 #bg-button-02 .bg-button-element {
-  padding-left: 19%;
-  padding-right: 19%;
+  padding-left: 23%;
+  padding-right: 23%;
 }
 
 .bg-button-element:hover {
@@ -379,11 +377,11 @@ header {
           }
 
           .bg {
-            height: 300px;
+            height: 250px;
           }
 
           .bg-headline {
-            margin: 20% auto;
+            margin: 15% auto;
             color: black;
           }
 
@@ -401,6 +399,11 @@ header {
             margin: 1% 0;
           }
 
+          #bg-button-02 .bg-button-element {
+            padding-left: 20%;
+            padding-right: 20%;
+          }
+
 
 }
 
@@ -414,11 +417,11 @@ header {
           }
 
           .bg {
-            height: 330px;
+            height: 300px;
           }
 
           .bg-headline {
-            margin: 20% auto;
+            margin: 15% auto;
             color: black;
           }
 
@@ -445,8 +448,8 @@ header {
           }
 
           #bg-button-02 .bg-button-element {
-            padding-left: 16.5%;
-            padding-right: 16.5%;
+            padding-left: 18%;
+            padding-right: 18%;
           }
 
 }
@@ -461,11 +464,11 @@ header {
           }
 
           .bg {
-            height: 400px;
+            height: 330px;
           }
 
           .bg-headline {
-            margin: 19% auto;
+            margin: 12% auto;
             color: black;
           }
 
@@ -489,8 +492,8 @@ header {
           }
 
           #bg-button-02 .bg-button-element {
-            padding-left: 11%;
-            padding-right: 11%;
+            padding-left: 12%;
+            padding-right: 12%;
           }
 }
 
@@ -509,11 +512,11 @@ header {
           }
 
           .bg {
-            height: 470px;
+            height: 400px;
           }
 
           .bg-headline {
-            margin: 20% auto;
+            margin: 15% auto;
             color: black;
           }
 
@@ -531,11 +534,6 @@ header {
           .bg-button-element{
             padding: 1% 10%;
             font-size: 1.1em;
-          }
-
-          #bg-button-02 .bg-button-element {
-            padding-left: 11%;
-            padding-right: 11%;
           }
 
 }
@@ -591,7 +589,7 @@ nav ul {
 @media (min-height: 300px) {
   nav ul {
     position: sticky;
-    top: 15%;
+
   }
 }
 nav ul li a {
@@ -605,13 +603,15 @@ nav ul li a.current {
 }
 
 .section-nav-title {
-  font-size: 0.85em;
+  font-size: 0.9em;
   margin: 0;
   line-height: 1.3;
+  font-weight: 400;
 }
 
 .section-nav-title-introduction{
-  font-size: 1em
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 .section-nav-number {
@@ -685,10 +685,12 @@ nav ul li a.current {
     font-size: 1.5em;
     font-weight: 700;
     color: #2ea0ff;
+    margin-bottom: 10%;
 }
 
 .page-main-content p {
-    font-size: 0.9em;
+    font-size: 1em;
+    line-height: 1.7em;
 }
 
 
@@ -739,7 +741,8 @@ nav ul li a.current {
 }
 
 #introduction-section p{
-  font-size: 0.9em;
+  font-size: 1em;
+  line-height: 1.7em;
 }
 
 #introduction-section h5, #section-1 h5, #section-2 h5, #section-3 h5, #section-4 h5, #section-5 h5, #section-6 h5, #section-7 h5, #section-8 h5, #section-9 h5 {
@@ -752,7 +755,7 @@ nav ul li a.current {
 
 #section-1 p, #section-2 p, #section-3 p, #section-4 p, #section-5 p, #section-6 p, #section-7 p, #section-8 p, #section-9 p {
   margin-top: 2%;
-  line-height: 1.6em;
+  line-height: 1.7em;
   font-size: 1em;
 }
 
@@ -830,10 +833,10 @@ nav ul li a.current {
   transition: all 0.4s ease;
   background-color: transparent;
   border: 4px solid #e0e0e0;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 1% 0%;
   font-size: 1em;
-  font-weight: 100;
+  font-weight: 400;
   color: #2ea0ff;
   cursor: pointer;
   width: 250px;
@@ -854,14 +857,83 @@ nav ul li a.current {
   padding-bottom: 10%;
 }
 
+.endorse-your-city-button {
+  margin: 0 0 10% 0;
+  transition: all 0.4s ease;
+  background-color: transparent;
+  border: 4px solid #e0e0e0;
+  border-radius: 30px;
+  padding: 1% 10%;
+  font-size: 1em;
+  color: #2ea0ff;
+  cursor: pointer;
+  width: 250px;
+}
 
-.endorse-section h2{
-  font-size: 1.7rem;
+.endorse-your-city-button:hover {
+  background-color: #2ea0ff;
+  border: 4px solid #2ea0ff;
+  color: white;
+  text-decoration: none;
+}
+
+
+.endorse-section h3{
+  font-size: 1.5rem;
   font-weight: 900;
   color: #2ea0ff;
   text-transform: uppercase;
   font-family: 'roboto';
-  margin-bottom: 5%;
+  margin-bottom: 7%;
+}
+
+.endorse-section p{
+  line-height: 1.7em;
+  font-size: 1em;
+}
+
+.page-content-text-header {
+  text-align: center;
+  margin: 25% 5% 10% 6%;
+}
+
+#cities-do-element {
+  text-align: center;
+}
+
+#cities-do-element h3{
+      color: #2ea0ff;
+}
+
+.cities-do-element-button-01, .cities-do-element-button-02, .cities-do-element-button-03 {
+    margin: 0 0 10% 0;
+    transition: all 0.4s ease;
+    background-color: transparent;
+    border: 4px solid #e0e0e0;
+    border-radius: 30px;
+    padding: 1% 17%;
+    font-size: 1.3em;
+    color: #2ea0ff;
+    cursor: pointer;
+}
+
+.cities-do-element-button-01 {
+    padding: 1% 21%;
+}
+
+.cities-do-element-button-02 {
+    padding: 1% 24%;
+}
+
+.cities-do-element-button-03 {
+    padding: 1% 18%;
+}
+
+.cities-do-element-button-01:hover, .cities-do-element-button-02:hover, .cities-do-element-button-03:hover {
+    background-color: #2ea0ff;
+    border: 4px solid #2ea0ff;
+    color: white;
+    text-decoration: none;
 }
 
 .img-fluid {
@@ -882,7 +954,7 @@ nav ul li a.current {
           }
 
           .page-main-content h1 {
-            margin-bottom: 5%;
+            margin-bottom: 6%;
           }
 
           .page-content-text p{
@@ -891,6 +963,34 @@ nav ul li a.current {
 
           #declaration {
             margin: 10% 0 0 0;
+          }
+
+          .page-content-text-header {
+            margin: 15% 5% 5% 6%;
+          }
+
+
+
+        .cities-do-element-button {
+
+            margin: 0 0 5% 0;
+            padding: 1% 10%;
+          }
+
+          .cities-do-element-button {
+              font-size: 1em;
+          }
+
+          .cities-do-element-button-01 {
+              padding: 1% 21%;
+          }
+
+          .cities-do-element-button-02 {
+              padding: 1% 24%;
+          }
+
+          .cities-do-element-button-03 {
+              padding: 1% 20%;
           }
 
 
@@ -964,7 +1064,22 @@ nav ul li a.current {
             font-size: 2rem;
           }
 
+          .page-main-content h1{
+            font-size: 2em;
+            margin-bottom: 7%;
+          }
 
+          .cities-do-element-button {
+              font-size: 1.2em;
+          }
+
+          .page-content-text-header {
+            margin: 10% 5% 5% 6%;
+          }
+
+          .cities-do-element-button {
+              font-size: 1.1em;
+          }
 }
 
 
@@ -983,6 +1098,26 @@ nav ul li a.current {
               height: 0;
           }
 
+          .page-content-text-header{
+            display: block;
+            margin: 10% 7% 5% 7%;;
+          }
+
+          #page-content-text-header-title {
+            margin:
+          }
+
+          .page-content-text-header ul li{
+            display: inline;
+          }
+
+          .page-main-content h1{
+          font-size: 2.5em;
+          font-weight: 700;
+          color: #2ea0ff;
+          margin-bottom: 7%;
+          }
+
           .page-content-text {
             margin: 7% 10%;
           }
@@ -993,6 +1128,10 @@ nav ul li a.current {
 
           #introduction-section h2 {
             font-size: 3em;
+          }
+
+          .cities-do-element-button {
+              font-size: 1.35em;
           }
 
 }
@@ -1038,7 +1177,7 @@ nav ul li a.current {
             font-size: 3em;
             font-weight: 700;
             color: #2ea0ff;
-            margin-bottom: 3%;
+            margin-bottom: 5%;
             }
 
             .page-main-content h4{
@@ -1069,6 +1208,10 @@ nav ul li a.current {
 
             .download-section {
                 margin: 10% 0;
+            }
+
+            .cities-do-element-button {
+                font-size: 1.5em;
             }
 
 }
