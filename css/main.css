@@ -765,7 +765,6 @@ nav ul li a.current {
 }
 
 .download-section h5 {
-  margin-top: 5%;
   font-weight: 100;
 }
 
@@ -786,6 +785,10 @@ nav ul li a.current {
 .download-file-button a:hover {
   transition: all 0.4s ease;
   transform: scale(1.1);
+}
+
+.page-content-text-title {
+  text-align: center;
 }
 
 .page-content-text {
@@ -854,7 +857,7 @@ nav ul li a.current {
 }
 
 #endorse {
-  padding-bottom: 10%;
+  padding-bottom: 0;
 }
 
 .endorse-your-city-button {
@@ -863,7 +866,7 @@ nav ul li a.current {
   background-color: transparent;
   border: 4px solid #e0e0e0;
   border-radius: 30px;
-  padding: 1% 10%;
+  padding: 3% 12%;
   font-size: 1em;
   color: #2ea0ff;
   cursor: pointer;
@@ -878,8 +881,9 @@ nav ul li a.current {
 }
 
 
+
 .endorse-section h3{
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 900;
   color: #2ea0ff;
   text-transform: uppercase;
@@ -890,11 +894,20 @@ nav ul li a.current {
 .endorse-section p{
   line-height: 1.7em;
   font-size: 1em;
+  margin-top: 15%;
+}
+
+.social-share-endorse {
+  margin-left: 2% 0;
 }
 
 .page-content-text-header {
   text-align: center;
   margin: 25% 5% 10% 6%;
+}
+
+.page-content-text-header p{
+  margin: 6% 10%;
 }
 
 #cities-do-element {
@@ -954,7 +967,7 @@ nav ul li a.current {
           }
 
           .page-main-content h1 {
-            margin-bottom: 6%;
+            margin-bottom: 3%;
           }
 
           .page-content-text p{
@@ -1066,7 +1079,6 @@ nav ul li a.current {
 
           .page-main-content h1{
             font-size: 2em;
-            margin-bottom: 7%;
           }
 
           .cities-do-element-button {
@@ -1098,13 +1110,9 @@ nav ul li a.current {
               height: 0;
           }
 
-          .page-content-text-header{
+          .page-content-tsext-header{
             display: block;
             margin: 10% 7% 5% 7%;;
-          }
-
-          #page-content-text-header-title {
-            margin:
           }
 
           .page-content-text-header ul li{
@@ -1115,11 +1123,10 @@ nav ul li a.current {
           font-size: 2.5em;
           font-weight: 700;
           color: #2ea0ff;
-          margin-bottom: 7%;
           }
 
           .page-content-text {
-            margin: 7% 10%;
+            margin: 9% 10% 8% 10%;
           }
 
           .page-content-text {
@@ -1195,7 +1202,7 @@ nav ul li a.current {
             }
 
             .page-content-text {
-              margin: 9% 10%;
+              margin: 9% 10% 8% 10%;
             }
 
             #introduction-section h2 {
@@ -1212,6 +1219,24 @@ nav ul li a.current {
 
             .cities-do-element-button {
                 font-size: 1.5em;
+            }
+
+            .endorse-your-city-button {
+              padding: 1% 9%;
+              font-size: 1.2em;
+            }
+
+            .social-share-endorse {
+              margin: 3% 0;
+            }
+
+            #social-share-endorse-title {
+              text-align: center;
+              font-family: 'Roboto', sans-serif;
+              font-weight: 900;
+              text-transform: uppercase;
+              color: #2ea0ff;
+              margin-bottom: 1%;
             }
 
 }
@@ -1435,7 +1460,7 @@ footer {
 /* --------------------------------------- SOCIAL SHARE --------------- */
 
 .social-share {
-  margin: 10% 0 20% 0;
+  margin: 20% 0 20% 0;
   display: flex;
 }
 
@@ -1456,7 +1481,7 @@ footer {
   font-weight: 900;
   text-transform: uppercase;
   color: #2ea0ff;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 
 .social ul {
@@ -1547,7 +1572,7 @@ footer {
 @media screen and (min-width: 768px) {
 
           .social-share {
-            margin: 10% 0 10% 0;
+            margin: 0;
             display: flex;
           }
 
