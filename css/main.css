@@ -37,11 +37,15 @@ body {
 
 p {
   line-height: 2.1em;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 a {
     color: #2ea0ff;
+}
+
+strong {
+    font-weight: 900;
 }
 
 /* --------------------------------------- MAIN NAV --------------- */
@@ -86,11 +90,13 @@ a {
   margin: 2% 3%;
   text-align: center;
   font-weight: 100;
+
 }
 
 #nav-link-active {
-  color: #206aa8 !important;
+  color: white;
 }
+
 
 .nav-item-01 {
   margin-top: 10%;
@@ -207,7 +213,9 @@ a {
 /*  (tablets, 768px and up)  */
 @media screen and (min-width: 768px) {
 
-
+        p {
+            font-weight: 200;
+        }
 
         .nav-item {
             margin: 1% 4%;
@@ -728,7 +736,7 @@ nav ul li a.current {
 
 .page-main-content p {
     font-size: 1.1em;
-    line-height: 1.7em;
+    line-height: 1.9em;
 }
 
 
@@ -780,7 +788,7 @@ nav ul li a.current {
 
 #introduction-section p{
   font-size: 1.1em;
-  line-height: 1.7em;
+  line-height: 1.9em;
 }
 
 #introduction-section h5, #section-1 h5, #section-2 h5, #section-3 h5, #section-4 h5, #section-5 h5, #section-6 h5, #section-7 h5, #section-8 h5, #section-9 h5 {
@@ -1064,7 +1072,7 @@ nav ul li a.current {
           }
 
           .endorse-section p{
-            margin: 7% auto;
+            margin: 5% auto;
           }
 
 
@@ -1105,6 +1113,9 @@ nav ul li a.current {
             margin-bottom: 5%;
           }
 
+          #introduction-section p{
+            line-height: 1.7em;
+          }
 
           .section-number {
             color: #2ea0ff;
@@ -1133,6 +1144,11 @@ nav ul li a.current {
           .endorse-section {
 
               margin: 10% 0 3% 0;
+          }
+
+          #social-share-endorse-title {
+            margin-bottom: 0;
+            font-size: 1.5em;
           }
 
           .endorse-section h2{
@@ -1164,7 +1180,7 @@ nav ul li a.current {
               font-size: 1.1em;
           }
           .endorse-section p{
-            margin: 7% auto;
+            margin: 5% auto;
           }
 }
 
@@ -1216,11 +1232,15 @@ nav ul li a.current {
           }
 
           .endorse-section p{
-            margin: 7% auto;
+            margin: 3% auto;
           }
 
           #cities-do-row {
               margin: 7% 0 0 0;
+          }
+
+          #social-share-endorse-title {
+            font-size: 1.7em;
           }
 
 }
@@ -1314,15 +1334,6 @@ nav ul li a.current {
 
             .social-share-endorse {
               margin: 3% 0;
-            }
-
-            #social-share-endorse-title {
-              text-align: center;
-              font-family: 'Roboto', sans-serif;
-              font-weight: 900;
-              text-transform: uppercase;
-              color: #2ea0ff;
-              margin-bottom: 1%;
             }
 
             .cities-do-element-button-01, .cities-do-element-button-02, .cities-do-element-button-03 {
@@ -1665,6 +1676,11 @@ footer {
           .social-share {
             margin: 0;
             display: flex;
+            padding: 3% 0 0 0;
+          }
+
+          #social-share-col6 {
+            padding: 0 0 3% 0;
           }
 
 }
