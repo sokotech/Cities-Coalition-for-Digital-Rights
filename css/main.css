@@ -147,7 +147,7 @@ a {
 }
 
 .declaration-download {
-  display: flex;
+
   align-items: center;
 }
 
@@ -158,9 +158,8 @@ a {
 }
 
 .declaration-download {
-  display: flex;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
 
 }
@@ -179,6 +178,30 @@ a {
 #declaration {
   padding: 25% 0 0 0;
 }
+
+
+/*  (landscape phones, 576px and up)   */
+@media screen and (min-width: 576px) {
+
+        .declaration-download {
+            width: 100px;
+            height: auto;
+        }
+
+        .declaration-download-icon {
+            width: 100px;
+        }
+
+        .nav-item-declaration-text {
+
+            text-align: center;
+            margin: 0 0 10% 0;
+            font-weight: 100;
+
+        }
+
+}
+
 
 
 /*  (tablets, 768px and up)  */
@@ -208,8 +231,12 @@ a {
         }
 
         .declaration-download {
-            width: 90px;
+            width: 100px;
             height: auto;
+        }
+
+        .declaration-download-icon {
+            width: 100px;
         }
 
         .nav-item-declaration-text {
@@ -742,7 +769,7 @@ nav ul li a.current {
 }
 
 #introduction-section p{
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.7em;
 }
 
@@ -1054,7 +1081,7 @@ nav ul li a.current {
           }
 
           #introduction-section p{
-            font-size: 1em;
+            font-size: 1.1em;
           }
 
           #introduction-section h2, #section-1 h2, #section-2 h2, #section-3 h2, #section-4 h2, #section-5 h2, #section-6 h2, #section-7 h2, #section-8 h2, #section-9 h2 {
@@ -1159,6 +1186,10 @@ nav ul li a.current {
 
           #introduction-section h2 {
             font-size: 3em;
+          }
+
+          #introduction-section p{
+            font-size: 1em;
           }
 
           .cities-do-element-button {
