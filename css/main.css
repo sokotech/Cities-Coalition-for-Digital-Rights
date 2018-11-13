@@ -1338,7 +1338,7 @@ nav ul li a.current {
 
             .cities-do-element-button-01, .cities-do-element-button-02, .cities-do-element-button-03 {
                 padding: 2% 22%;
-                font-size: 1.9em;
+                font-size: 1.7em;
             }
 
 }
@@ -1414,8 +1414,8 @@ footer {
 }
 
 .footer-credits {
-  padding: 2% 0 0 0;
-  font-size: 0.8em;
+  padding: 15% 0 0 0;
+  font-size: 0.7em;
 }
 
 
@@ -1484,7 +1484,10 @@ footer {
             padding: 0 7%;
           }
 
-
+          .footer-credits {
+            padding: 5% 0 0 0;
+            font-size: 0.8em;
+          }
 
 }
 
