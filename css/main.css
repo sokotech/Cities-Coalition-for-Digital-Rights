@@ -370,16 +370,16 @@ header {
   background-color: transparent;
   border: 4px solid #e0e0e0;
   border-radius: 40px;
-  padding: 1% 15%;
-  font-size: 0.9em;
+  padding: 2% 15%;
+  font-size: 1em;
   font-weight: 400;
   color: #2ea0ff;
   cursor: pointer;
 }
 
 #bg-button-02 .bg-button-element {
-  padding-left: 23%;
-  padding-right: 23%;
+  padding-left: 21%;
+  padding-right: 21%;
 }
 
 .bg-button-element:hover {
@@ -422,6 +422,7 @@ header {
             font-weight: 100;
           }
 
+
           #bg-button-01, #bg-button-02, #bg-button-03 {
             margin: 1% 0;
           }
@@ -429,6 +430,11 @@ header {
           #bg-button-02 .bg-button-element {
             padding-left: 20%;
             padding-right: 20%;
+          }
+
+          .bg-button-element{
+            padding: 1% 15%;
+            font-size: 1em;
           }
 
 
@@ -472,6 +478,7 @@ header {
 
           .bg-button-element{
             padding: 1% 15%;
+            font-size: 1.3em;
           }
 
           #bg-button-02 .bg-button-element {
@@ -516,6 +523,7 @@ header {
 
           .bg-button-element{
             padding: 1% 10%;
+            font-size: 1.3em;
           }
 
           #bg-button-02 .bg-button-element {
@@ -560,7 +568,7 @@ header {
 
           .bg-button-element{
             padding: 1% 10%;
-            font-size: 1.1em;
+            font-size: 1.3em;
           }
 
 }
@@ -710,14 +718,14 @@ nav ul li a.current {
 }
 
 .page-main-content h1 {
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: 2em;
+    font-weight: 900;
     color: #2ea0ff;
     margin-bottom: 10%;
 }
 
 .page-main-content p {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.7em;
 }
 
@@ -784,7 +792,7 @@ nav ul li a.current {
 #section-1 p, #section-2 p, #section-3 p, #section-4 p, #section-5 p, #section-6 p, #section-7 p, #section-8 p, #section-9 p {
   margin-top: 2%;
   line-height: 1.7em;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .download-section {
@@ -920,7 +928,7 @@ nav ul li a.current {
 
 .endorse-section p{
   line-height: 1.7em;
-  font-size: 1em;
+  font-size: 1.1em;
   margin: 10% auto 10% auto;
 }
 
@@ -939,6 +947,10 @@ nav ul li a.current {
 
 .container-spacer {
   padding: 5% 0;
+}
+
+#cities-do-row {
+  margin: 15% 0 0 0;
 }
 
 #cities-do-element {
@@ -1022,6 +1034,9 @@ nav ul li a.current {
             margin: 15% 5% 5% 6%;
           }
 
+          #cities-do-row {
+            margin: 13% 0 0 0;
+          }
 
 
         .cities-do-element-button {
@@ -1080,9 +1095,6 @@ nav ul li a.current {
             margin-bottom: 5%;
           }
 
-          #introduction-section p{
-            font-size: 1.1em;
-          }
 
           #introduction-section h2, #section-1 h2, #section-2 h2, #section-3 h2, #section-4 h2, #section-5 h2, #section-6 h2, #section-7 h2, #section-8 h2, #section-9 h2 {
             font-weight: 900;
@@ -1127,6 +1139,15 @@ nav ul li a.current {
 
           .page-main-content h1{
             font-size: 2em;
+          }
+
+          #cities-do-row {
+            margin: 10% 0 0 0;
+          }
+
+          .cities-do-element-button-01, .cities-do-element-button-02, .cities-do-element-button-03 {
+            padding: 1% 16%;
+            font-size: 1.2em;
           }
 
           .cities-do-element-button {
@@ -1188,16 +1209,16 @@ nav ul li a.current {
             font-size: 3em;
           }
 
-          #introduction-section p{
-            font-size: 1em;
-          }
-
           .cities-do-element-button {
               font-size: 1.35em;
           }
 
           .endorse-section p{
             margin: 7% auto;
+          }
+
+          #cities-do-row {
+              margin: 7% 0 0 0;
           }
 
 }
@@ -1300,6 +1321,11 @@ nav ul li a.current {
               text-transform: uppercase;
               color: #2ea0ff;
               margin-bottom: 1%;
+            }
+
+            .cities-do-element-button-01, .cities-do-element-button-02, .cities-do-element-button-03 {
+                padding: 2% 22%;
+                font-size: 1.9em;
             }
 
 }
