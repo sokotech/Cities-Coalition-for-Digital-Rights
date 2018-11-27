@@ -605,6 +605,10 @@ nav ul {
    display: none;
 }
 
+#sidebar-ul {
+  margin-left: 10%;
+}
+
 .section-block-anchor-link:hover {
   color: #8c8c8c;
   text-decoration: none;
