@@ -1676,6 +1676,17 @@ footer {
     background: #828282;
 }
 
+#design-notice, #license-notice {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+
+#creative-commons-logo img{
+  width: 9%;
+  margin: 2% 0;
+}
+
 /*  (landscape phones, 576px and up)   */
 @media screen and (min-width: 576px) {
 
